@@ -213,7 +213,7 @@ PYBIND11_MODULE(tinyexr, m)
                     sizeof(float),                                     /* Size of one scalar */
                     py::format_descriptor<float>::format(),            /* Python struct-style format descriptor */
                     3,                                                 /* Number of dimensions */
-                    { m.getHeight(), m.getHeight(), m.getChannels() }, /* Buffer dimensions */
+                    { m.getHeight(), m.getWidth(), m.getChannels() }, /* Buffer dimensions */
                     { m.getWidth() * m.getChannels() * sizeof(float), m.getChannels() * sizeof(float), sizeof(float) }
                     /* Strides (in bytes) for each index */
                 );
