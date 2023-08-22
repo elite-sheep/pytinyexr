@@ -29,7 +29,7 @@ plt.imshow(img_np)
 plt.show()
 ```
 
-The output image is the following:
+The output image is the following:  
 ![](./figures/dwsample.png)
 
 In the following sample we demonstrate how to get access to pixel values and display an EXR image with `PIL`.
